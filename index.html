@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    <link href="../static/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+
+        body {
+          background-color: #434242;
+        }
+
+
+        #carouselExampleCaptions {
+  border-radius: 20px;
+  overflow: hidden; /* ensures images follow the curve */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4); /* optional, for depth */
+}
+
+
+
+.carousel-caption h5 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.carousel-caption p {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+    .carousel-item::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
+    }
+
+
+        .carousel-caption h5,
+.carousel-caption p {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+
+    <!--Carousel-->
+    <article class="my-3" id="carousel">
+
+        <div>
+            <div class="bd-example-snippet bd-code-snippet">
+                <div class="bd-example m-0 border-0">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3" class="active" aria-current="true"></button>
+
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="https://img.freepik.com/free-photo/top-view-desk-dark-concept-with-copy-space_23-2148459511.jpg"
+                                     class="d-block w-100"
+                                     alt="AI Image"
+                                     height="600">
+
+                                <div class="carousel-caption d-none d-md-block" style="bottom: 40%; text-align: left;">
+                                    <h5 style="font-size: 4rem; color: white; text-shadow: 2px 2px 8px black;">Sarthak
+                                        Bankar</h5>
+                                    <p style="color: white; font-size: 1.5rem;">Junior Python Developer | Data Analyst &
+                                        Visualization. </p>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://img.freepik.com/premium-photo/top-view-dark-stylish-workplace-with-smartphone-office-supplies_67155-2963.jpg"
+                                     class="d-block w-100"
+                                     alt="AI Image"
+                                     height="600">
+
+                                <div class="carousel-caption d-none d-md-block" style="bottom: 15%; text-align: left;">
+                                    <h5 style="font-size: 3rem; color: white; text-shadow: 2px 2px 8px black;">About
+                                        me</h5>
+                                    <p style="color: white; font-size: 1.2rem; text-align: left; width: 70%;">I’m a
+                                        student at Priyadarshini College of Engineering, currently pursuing a degree in
+                                        Artificial Intelligence and Data Science.
+                                        I enjoy playing guitar just for fun, and I’m always curious to learn something
+                                        new. My love for video games sparked my interest in software and coding — it’s
+                                        what inspired me to start creating and understanding how things work behind the
+                                        screen.
+                                        Whenever I work on something meaningful, I give it my full dedication, because I
+                                        love upskilling myself and turning curiosity into real progress.</p>
+
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                        <a href="https://docs.google.com/document/d/1AZdRmlwTFGjt3SEzili-0pDx7vq7HsWW3mEKDicCzPY/edit?usp=sharing"
+                                           type="button" class="btn btn-light btn-lg px-4 me-md-2">Resume
+                                        </a>
+                                        <a href="/portfolio" type="button"
+                                           class="btn btn-outline-light btn-lg px-4">Projects
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://img.freepik.com/free-photo/top-view-desk-dark-concept-with-copy-space_23-2148459511.jpg"
+                                     class="d-block w-100"
+                                     alt="AI Image"
+                                     height="600">
+
+                                <div class="carousel-caption d-none d-md-block" style="bottom: 40%; text-align: left;">
+                                    <h5 style="font-size: 4rem; color: white; text-shadow: 2px 2px 8px black;">
+                                        Contact</h5>
+                                    <p style="color: white; font-size: 1.5rem;">
+                                        <a href="https://github.com/leocoder22" type="button"
+                                           class="btn btn-outline-light btn-lg px-4"><i class="bi bi-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/sarthak-bankar-219758290/" type="button"
+                                           class="btn btn-outline-light btn-lg px-4"><i class="bi bi-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/sarttthak_/" type="button"
+                                           class="btn btn-outline-light btn-lg px-4"><i class="bi bi-instagram"></i></a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</div>
+</body>
+</html>

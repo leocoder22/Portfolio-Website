@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Homenaje&family=Metal+Mania&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        @keyframes gradientBG {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        body {
+
+          background: linear-gradient(-45deg, #F2F2F2, #DCD7C9, #686D76, #D8D9DA);
+
+          background-size: 400% 400%;
+          animation: gradientBG 15s ease infinite;
+
+          min-height: 100vh;
+          margin: 0;
+
+          font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+        }
+
+                .icon-square svg {
+            position: relative;
+            top: 6px; /* positive moves it down, negative moves it up */
+        }
+
+
+
+       .heading-with-button {
+  display: flex;                /* horizontal layout */
+  justify-content: space-between; /* left & right alignment */
+  align-items: center;          /* vertical centering */
+  border-bottom: 3px solid black; /* bottom line */
+  padding-bottom: 0.25rem;      /* space between text and border */
+}
+.heading-with-button h1 {
+  margin: 0;                    /* remove default margin */
+               /* optional size */
+}
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <!--Features-->
+    <div class="container px-4 py-5" id="hanging-icons">
+
+
+        <div class="heading-with-button">
+            <h1 class="mb-0">My Projects</h1>
+            <a href="/" class="btn btn-dark btn-md">Home</a>
+        </div>
+
+
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-transparent d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+                         class="bi bi-anthropic" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M9.218 2h2.402L16 12.987h-2.402zM4.379 2h2.512l4.38 10.987H8.82l-.895-2.308h-4.58l-.896 2.307H0L4.38 2.001zm2.755 6.64L5.635 4.777 4.137 8.64z"/>
+                    </svg>
+                </div>
+                <div><h3 class="fs-2 text-body-emphasis">Text to Morse Converter</h3>
+                    <p>The Text-To-Morse converter is a python text-based program which converts a string
+                        to morse code. And if given morse code in proper format the morse code is converted
+                        to text.</p> <a href="https://github.com/leocoder22/Text-to-Morse"
+                                        class="btn btn-dark"><i class="bi bi-github"></i>
+                        Link to GitHub
+                    </a></div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-transparent d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+                         class="bi bi-card-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                </div>
+                <div><h3 class="fs-2 text-body-emphasis">Blog Website</h3>
+                    <p>A simple website for showcasing my blogs, made for practice and share my views. You can access
+                        the website directly by clicking <a href="https://five4day-py.onrender.com">this</a>.</p> <a
+                            href="https://github.com/leocoder22/Blog-Website"
+                            class="btn btn-dark"><i class="bi bi-github"></i>
+                        Link to GitHub
+                    </a></div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-transparent d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+                         class="bi bi-dice-3-fill" viewBox="0 0 16 16">
+                        <path d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3zm2.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M8 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                    </svg>
+                </div>
+                <div><h3 class="fs-2 text-body-emphasis">Snake Game</h3>
+                    <p>A fun Python arcade game where you control a snake. Eat food to grow longer, avoid walls and
+                        yourself, and try to beat your high score!</p> <a
+                            href="https://github.com/leocoder22/Snake-Game"
+                            class="btn btn-dark"><i
+                            class="bi bi-github"></i>
+                        Link to GitHub
+                    </a></div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-transparent d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+                         class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+                    </svg>
+                </div>
+                <div><h3 class="fs-2 text-body-emphasis">Profile Card</h3>
+                    <p>A personal web page showcasing my contact info, making it easy for anyone to reach me. <a
+                            href="https://leocoder22.github.io/Profile-Card/">Card</a></p> <a
+                            href="https://github.com/leocoder22/Profile-Card"
+                            class="btn btn-dark"><i
+                            class="bi bi-github"></i>
+                        Link to GitHub
+                    </a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
